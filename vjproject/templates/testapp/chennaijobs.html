@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{% static 'css/jobs.css'%}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Chennai Job Infomation</h1>
+    <img src="{%static 'image/chennai1.jpg'%}" alt="">
+    <img src="{%static 'image/chennai2.jpg'%}" alt="">
+    <img src="{%static 'image/chennai3.jpg'%}" alt="">
+
+    {%if jobs_list%}
+      <table id="tab">
+        <thead>
+          <th>Date</th>
+          <th>Company</th>
+          <th>Title</th>
+          <th>Eligibility</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Phonenumber</th>
+        </thead>
+        {%for i in jobs_list%}
+          <tr>
+            <td>{{i.date}}</td>
+            <td>{{i.company}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.eligibility}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.phonenumber}}</td>
+          </tr>
+        {%endfor%}
+      </table>
+      {%else%}
+        <h1>NO Jobs In Chennai</h1>
+    {%endif%}
+
+  </body>
+</html>

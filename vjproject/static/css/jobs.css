@@ -1,0 +1,48 @@
+body{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwWQeFBRyclHzWLG3E6pkbnibNZsPWwU1yA6I2NsPzfoOpYXGP&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  margin-top: 150px;
+
+
+}
+.jumbotron{
+  background: red;
+  color: white;
+  border: 2px solid blue;
+  }
+  p{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: yellow;
+  }
+img{
+  height: 200px;
+  width: 30%;
+  float: left;
+  margin: 1.5%;
+  border: 2px solid red;
+}
+h1{
+  background: red;
+  text-align: center;
+  color: white;
+  }
+table,thead,tr,th,td{
+  color: yellow;
+  border: 2px solid white;
+  font-size: 20px;
+  margin: auto;
+  background: red;
+
+}
+thead,th{
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  margin: auto;
+  background: blue;
+}
